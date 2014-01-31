@@ -1,4 +1,4 @@
-bower.json{
+{
   "name": "angular-optmizely",
   "version": "0.0.1",
   "main": "ngshowvariant.js",
