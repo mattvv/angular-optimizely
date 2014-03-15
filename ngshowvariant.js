@@ -1,5 +1,6 @@
 'use strict';
-angular.module('ngshowvariant')
+
+angular.module('ngshowvariant',[]);
 
 /*
  * angular-markdown-directive v0.1.0
@@ -33,7 +34,7 @@ angular.module('ngshowvariant')
  *   scope.$broadcast('$updateVariant');
  * });
  */
-  .directive('ngShowVariant', function($rootScope) {
+ angular.module('ngshowvariant').directive('ngShowVariant', function($rootScope) {
     var variant = window.variant;
     if (!variant) {
       variant = 'none';
