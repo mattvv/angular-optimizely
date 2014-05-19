@@ -2,7 +2,7 @@
 A simple directive to allow A/B testing with optimizely in angular applications.
 
 ## Usage
-1. `bower install angular-optizely`
+1. `bower install angular-optimizely`
 2. Include the `ngshowvariant.js` script provided by this component into your app.
 3. Add `ngshowvariant` as a module dependency to your app.
 5. Insert the `ng-show-variant` directive into your template where you wish to conditionally show items.
