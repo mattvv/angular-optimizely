@@ -26,15 +26,15 @@ angular.module('ngshowvariant',[]);
  *
  * //set which variant you would like
  * window.variant= "optmizely1";
- * 
+ *
  * //tell angular the variant has changed.
  * var scope = angular.element(document.getElementById('main')).injector().get('$rootScope');
- * 
+ *
  * scope.$apply( function() {
  *   scope.$broadcast('$updateVariant');
  * });
  */
- angular.module('ngshowvariant').directive('ngShowVariant', function($rootScope) {
+ angular.module('ngshowvariant').directive('ngShowVariant', ['$rootScope', function($rootScope) {
     var variant = window.variant;
     if (!variant) {
       variant = 'none';
@@ -64,4 +64,4 @@ angular.module('ngshowvariant',[]);
         $rootScope.$on('$updateVariant', function() { fn(window.variant); });
       }
     };
-  });
+  }]);
