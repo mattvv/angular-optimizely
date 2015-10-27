@@ -3,6 +3,6 @@
   "version": "0.0.3",
   "main": "ngshowvariant.js",
   "dependencies": {
-    "angular": "~1.2.6"
+    "angular": "^1.2.6"
   }
 }
