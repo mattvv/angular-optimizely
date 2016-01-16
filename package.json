@@ -1,0 +1,8 @@
+{
+  "name": "angular-optmizely",
+  "version": "0.0.4",
+  "main": "ngshowvariant.js",
+  "dependencies": {
+    "angular": "^1.2.6"
+  }
+}
